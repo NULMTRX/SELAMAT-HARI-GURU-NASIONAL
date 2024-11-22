@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SELAMAT HARI GURU SMP FIKRI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">SELAMAT HARI GURU</h1>
+    <h2 class="title">SMP FIKRI</h2>
+    <p class="subtitle">"Guru adalah pelita ilmu yang tak pernah padam."</p>
+    <button class="open-btn" id="openButton" onclick="showMessage()">BUKA</button>
+    <div class="message">
+      <p>
+        Pada tanggal 25 November 2024 ini, saya FIQRI NAUFAL MAHARDIKA, ingin mengucapkan terima kasih yang sebesar-besarnya kepada semua guru yang telah dengan tulus mengajar, membimbing, dan memberikan ilmu serta nilai-nilai kehidupan yang tak ternilai harganya.
+      </p>
+      <p>
+        Untuk semua guru di SMP FIKRI, terima kasih atas ilmu, semangat, dan keteladanan yang telah kalian berikan. FIQRI merasa sangat beruntung bisa belajar dan tumbuh di bawah bimbingan yang penuh kasih dan sabar. Selamat Hari Guru!
+      </p>
+    </div>
+    <div class="hidden-content" id="hiddenContent">
+      <!-- Audio diputar -->
+      <audio controls autoplay loop>
+        <source src="Terimakasih.mp3" type="audio/mpeg">
+      </audio>
+      <!-- Gambar-gambar -->
+      <img src="SMP1.jpg" alt="Gambar 1">
+      <img src="SMP2.jpg" alt="Gambar 2">
+      <!-- Judul baru -->
+      <div class="new-title">FIQRI 81</div>
+      <!-- Nama bergerak -->
+      <div class="moving-name">HTML CODING:FIQRI</div>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.querySelector('.message').style.display = 'block';
+      document.getElementById('hiddenContent').style.display = 'block';
+      const button = document.getElementById('openButton');
+      button.innerText = 'BACA YA';
+      button.disabled = true;
+    }
+  </script>
+</body>
+</html>
